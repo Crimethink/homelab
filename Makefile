@@ -1,8 +1,12 @@
 .POSIX:
 
-default: metal bootstrap wait
+default: preparation metal bootstrap wait
 
-all: metal bootstrap external wait
+all: preparation metal bootstrap external wait
+
+.PHONY: preparation
+preparation:
+	make -C metal_preparation
 
 .PHONY: metal
 metal:

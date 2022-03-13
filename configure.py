@@ -39,7 +39,7 @@ def find_and_replace(pattern: str, replacement: str, paths: list[str]) -> None:
 
 def main() -> None:
     check_python_version(
-        required_version='3.10.0'
+        required_version='3.9.0'
     )
 
     editor = str(input(f"Text editor ({default_editor}): ") or default_editor)
